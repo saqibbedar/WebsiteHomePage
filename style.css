@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.bigContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHZlby-SqBYeKMtg-yHMXrZsXqPwtkn-sJRqvr8uZrztBhdlttgQ7CcNpMiz5G9y1y69tmTFf9DIVp6iVq3MDS-DDAHZE3vVkL4DbXbk3YDQPbHK4f7DRJ9qWDJ9wQVxHDoF9CCum2RmACxA5Xdqa_2hGlA8VWyboCRJ2x6ns9SdhO_BUPuwgvLPcK5EI2/s1600/image2.png);
+    background-size: cover;
+    background-position: center;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: rgb(42 45 157 / 74%);
+    }
+.imgbox{
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+.imgPosition{
+    height: 75%;
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Imagelogo{
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0 0 20px 5px #ffffffba;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logotext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(90deg, rgb(172, 72, 215), rgb(178, 70, 211), rgb(192, 68, 199), rgb(207, 66, 184), rgb(218, 69, 168), rgb(225, 74, 155), rgb(228, 80, 146), rgb(229, 82, 143));
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+img#mainImage{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all .4s ease;
+    position: relative;
+    z-index: 2;
+}
+img#mainImage:hover{
+    scale: 1.1;
+}
+.textbox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.textcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+.textcenter h1, h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+.textcenter p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.textcenter h1, p{
+    margin-bottom: 3px;
+}
+#aboutus p{
+    color:#bfb4fd;
+    display: inline-block;
+    transition:all .2s ease-in-out;
+}
+#aboutus p:hover{
+    color: white;
+}
+.techyfly{
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(172, 72, 215), rgb(178, 70, 211), rgb(192, 68, 199), rgb(207, 66, 184), rgb(218, 69, 168), rgb(225, 74, 155), rgb(228, 80, 146), rgb(229, 82, 143));
+    padding: 0px 8px 5px;
+}
+.animatedHand{
+    display: inline-block;
+    animation: 2s ease-in-out 0s infinite normal none running animee;
+    transform-origin: 80% 75%;
+    margin-left: 4px;
+    margin-right: 8px;
+}
+/* Animation */
+@keyframes animee {
+    
+    0% {
+        transform: rotate(20deg);
+    }
+    10% {
+        transform: rotate(45deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    30% {
+        transform: rotate(40deg);
+    }
+    40% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+    60% {
+        transform: rotate(20deg);
+    }
+    70% {
+        transform: rotate(30deg);
+    }
+    80% {
+        transform: rotate(20deg);
+    }
+    90% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+    }
+/* Responsive */
+@media (max-width:740px) {
+    #main{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .imgbox{
+            float: none;
+            height: 50%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .imgPosition {
+            height: 100%;
+            width: 80%;
+        }
+        .Imagelogo{
+            width: 170px;
+            height: 170px;
+            z-index: 1;
+        }
+        .logotext{
+            font-size: 27px;
+            width: 100%;
+            text-align: center;
+        }
+        .textcenter{
+            width: 90%;
+        }
+        .textbox{
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+        }
+        .textcenter h1, h2 {
+            font-size: 24px;
+            line-height: 38px;
+            width: 100%;
+        }
+        .textcenter p {
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 400;
+            margin-top: 7px;
+        }
+}
